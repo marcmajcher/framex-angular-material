@@ -1,7 +1,12 @@
 
 <!-- <app-top-nav></app-top-nav> -->
 <h1>{{title}}</h1>
-<p>TEST</p>
+<input type="text" placeholder="Filter"> 
+<select>
+  <option value="votes">Sort by votes</option>
+  <option value="title">Sort by title</option>
+  <option value="date">Sort by date</option>
+</select>
 
 <app-post-list></app-post-list>
 <router-outlet></router-outlet>

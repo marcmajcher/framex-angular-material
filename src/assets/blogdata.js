@@ -20,7 +20,7 @@ export const BlogData =
     votes: 16,
     date: '2005-08-19T23:15:30.000Z',
     comments: [
-
+      'wat'
     ]
   },
   {

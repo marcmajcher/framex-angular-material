@@ -1,5 +1,19 @@
-<ul>
-  <li *ngFor="let post of blogData">
-    <b>{{post.title}}</b> : {{post.body}}
-  </li>
-</ul>
+<div class="post" *ngFor="let post of blogData">
+  <img src="{{post.image}}" />
+  <div>
+    <b>{{post.title}}</b> | <i class="material-icons">
+      thumb_up
+    </i><i class="material-icons">
+      thumb_down
+    </i>
+    {{post.votes}}
+  </div>
+  <div class="author">
+    {{post.author}}
+  </div>
+  <p>{{post.body}}</p>
+  <div>
+    <span class="date">{{post.date}}</span> |
+    <span> {{post.comments.length}} comment<span *ngIf="post.comments.length !== 1">s</span></span>
+  </div>
+</div>
